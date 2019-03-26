@@ -18,3 +18,13 @@ In its current state, the script checks the sensor if moisture is detected and l
 - [Soil Moisture Sensor](https://www.jaycar.com.au/arduino-compatible-soil-moisture-sensor-module/p/XC4604).
 - Packet of GPIO Wires (Came with the raspberry pi kit)
 
+## Wiring:
+
+Start by cutting the wire that connects the pump and the power input, seperate the white and red wires and put two of the same wire going into the relay and the other two soldered back together, shown [here](https://imgur.com/a/IFV9cdd). 
+
+Connect the ground (GND) pin on the relay to the ground pin on the raspberry pi, i found [this](https://imgur.com/a/VaiOy99) resource great for finding which pins are correct. Connect VCC to the 5V Pin on your raspberry pi. Finally connect the IN1 or whichever GPIO pin corresponds to the relay you will be using, to a GPIO slot in your raspberry pi, for me i used pin 7 (or GPIO slot 4). This will enable us to tell the raspberry pi to open the relay slot on the specified GPIO pin and enable the pump to turn on.
+
+Connecting the moisture sensor is simple, connect the pin with the "+" sign above it to a 5V pin on the raspberry pi. Then connect the pin with the "-" symbol to a ground pin on the raspberry pi. The final pin is the GPIO pin, so choose whatever pin you would like but personally i chose pin 3 (GPIO 2).
+
+Once all connected, download the script.py from this repository and run it on the raspberry pi. Get creative with the piping you use for the watering system, i just went for some conventional plastic tubing and poked a few holes with a heated up screwdriver, make sure you get a wide spread of water with the holes so that the whole plant is watered equally.
+
