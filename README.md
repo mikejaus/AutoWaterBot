@@ -4,9 +4,9 @@
 In its current state, the script checks the sensor if moisture is detected and lets the pump shoot water onto the plant until water is detected. In upcoming updates i hope to make the software more aware of how much water the plant is being given to avoid drowning the plant. I also have plans to implement a humidity sensor and link a humidifier that would be used for any plant needing moisture regulation. I also hope to implement a HTML interface so that i can access the system wherever i am and make it easier for others to monitor it aswell. A cool idea would be to add a web monitoring system with a webcam that i have spare but that might come in the late future for this project
 
 ## References / Learning Material
-Original inspiration from [The Cyber Omlette](http://www.cyber-omelette.com/2017/09/automated-plant-watering.html).
+- Original inspiration from [The Cyber Omlette](http://www.cyber-omelette.com/2017/09/automated-plant-watering.html).
 
-Learning the [Moisture Sensors](https://www.instructables.com/id/Soil-Moisture-Sensor-Raspberry-Pi/).
+- Learning the [Moisture Sensors](https://www.instructables.com/id/Soil-Moisture-Sensor-Raspberry-Pi/).
 - This reference didnt actually help me that much as the sensor i purchased was alot different, instead i learnt the basics of connecting things to the raspberry pi from multiple videos and tutorials and managed to wrap my head around how the GPIO pins worked on a raspberry pi. After figuring out GPIO pins i learnt how to implement them into python code so that i could read and write values from the sensor.
 
 ## Purchased Materials:
