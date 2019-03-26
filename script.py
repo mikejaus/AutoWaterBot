@@ -12,7 +12,7 @@ GPIO.setup(pump, GPIO.OUT)
 
 def end_read(signal,frame):
         global continue_reading
-        print "Aborted Process."
+        print "Control+C Captured, Stopping Process"
         continue_process = False
         GPIO.cleanup(sensor)
         GPIO.cleanup(pump)
@@ -21,7 +21,7 @@ signal.signal(signal.SIGINT, end_read)
 
 while continue_reading:
         if GPIO.input(sensor)==0:
-                print "Plant needs water!"
+                print "Plant Dry - Activating Pump"
                 GPIO.output(pump, GPIO.LOW)
                 time.sleep(1)
         else:
