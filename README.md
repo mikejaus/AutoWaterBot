@@ -7,7 +7,7 @@ In its current state, the script checks the sensor if moisture is detected and l
 - Original inspiration from [The Cyber Omlette](http://www.cyber-omelette.com/2017/09/automated-plant-watering.html).
 
 - Learning the [Moisture Sensors](https://www.instructables.com/id/Soil-Moisture-Sensor-Raspberry-Pi/).
-- This reference didnt actually help me that much as the sensor i purchased was alot different, instead i learnt the basics of connecting things to the raspberry pi from multiple videos and tutorials and managed to wrap my head around how the GPIO pins worked on a raspberry pi. After figuring out GPIO pins i learnt how to implement them into python code so that i could read and write values from the sensor.
+    - This reference didnt actually help me that much as the sensor i purchased was alot different, instead i learnt the basics of  connecting things to the raspberry pi from multiple videos and tutorials and managed to wrap my head around how the GPIO pins worked on a raspberry pi. After figuring out GPIO pins i learnt how to implement them into python code so that i could read and write values from the sensor.
 
 ## Purchased Materials:
 - [Small Water Pump](https://www.ebay.com.au/itm/273310251939).
